@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<body>  
+
+  <main>        
+      <!-- breadcrumbs -->
+    <div class="top-sec" style="margin-top: 4em;">
+      <div class="container">
+        <ol class="breadcrumb" style="padding-top: 1em;">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page" style="color: #0f0fc2; font-weight: 500;">Records</li>
+        </ol>
+      </div>
+    </div>
+  <!-- breadcrumbs -->
+    <div id="display-form display-record" class="container shadow report-form">
+    
+    <div class="title-top" style="padding-top: 1em;">
+      <h2>Report Records</h2> 
+    </div> 
+
+    <div id="exTab" style="padding: 0 5em 0 5em;">	
+
+      <ul  class="nav container-sm nav-pills" style="max-width:1000px">
+          <li class="active"><a  href="#1b" data-toggle="tab">All Reports</a></li>
+          <li><a href="#2b" data-toggle="tab">Crime Reports</a></li>
+          <li><a href="#3b" data-toggle="tab">Complain Records</a></li>
+      </ul>
+      
+      
+      <div class="tab-content clearfix">
+        <!-- all reports -->
+        <div class="tab-pane active" id="1b">
+          <h3 style="font-size: medium;"><i class="fa-solid fa-folder-open"></i> Showing all the reports reported from people.</h3>
+          {% for records in crime_rec %}
+          <div class="list-group">
+            <a href="/details/crime/{{ records.id }}" class="list-group-item list-group-item-action" aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1" style="text-decoration: none;"> <b>{{ records.title }}</b> </h5>
+                <small>{{ records.date }} <br> Status: <b>{{ records.status }}</b> </small>
+              </div>
+              <p class="mb-1"> <b>Crime</b>  <br> Address: {{ records.city }}, {{ records.street }}</p>
+            </a>
+          </div>
+          {% endfor %} 
+          
+          {% for records in comp_rec %}   
+          <div class="list-group">
+            <a href="/details/complain/{{ records.id }}" class="list-group-item list-group-item-action" aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1" style="text-decoration: none;"> <b>{{ records.title }}</b> </h5>
+                <small>{{ records.date }} <br> Status: <b>{{ records.status }}</b> </small>
+              </div>
+              <p class="mb-1"> <b>Complain</b>  <br>Address: {{ records.city }}, {{ records.street }}</p>
+              <small>Description: {{ records.crimeDesc }}</small>
+            </a>
+          </div>
+          {% endfor %}
+          
+        </div>
+
+        <!-- crime -->
+        <div class="tab-pane" id="2b">
+          <h3 style="font-size: medium;"><i class="fa-solid fa-folder-open"></i> Showing all the Crime reports only.</h3>
+          {% for records in crime_rec %}
+          <div class="list-group">
+            <a href="/details/crime/{{ records.id }}" class="list-group-item list-group-item-action" aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1" style="text-decoration: none;"> <b>{{ records.title }}</b> </h5>
+                <small>{{ records.date }} <br> Status: <b>{{ records.status }}</b> </small>
+              </div>
+              <p class="mb-1">Address: {{ records.city }}, {{ records.street }}</p>
+            </a>
+          </div>
+          {% endfor %} 
+        </div>
+
+        <!-- complain -->
+        <div class="tab-pane" id="3b">
+          <h3 style="font-size: medium;"><i class="fa-solid fa-folder-open"></i> Showing all the Complains raised.</h3>
+
+          {% for records in comp_rec %}   
+          <div class="list-group">
+            <a href="/details/complain/{{ records.id }}" class="list-group-item list-group-item-action" aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1" style="text-decoration: none;"> <b>{{ records.title }}</b> </h5>
+                <small>{{ records.date }} <br> Status: <b>{{ records.status }}</b> </small>
+              </div>
+              <p class="mb-1">Address: {{ records.city }}, {{ records.street }}</p>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+  
+  </main>
+</body>
+
+{% endblock content %}

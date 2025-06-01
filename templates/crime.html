@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<main>
+      <!-- breadcrumbs -->
+    <div class="top-sec" style="margin-top: 4em;">
+      <div class="container">
+        <ol class="breadcrumb" style="padding-top: 1em;">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page" style="color: #0f0fc2; font-weight: 500;">Crime-form</li>
+        </ol>
+      </div>
+    </div>
+  <!-- breadcrumbs -->
+  <div id="display-form" class="container-md shadow report-form" style="max-width: 900px;">
+    <div class="form-top">
+      <h2>Crime Report Form</h2>
+      <p>Please fill all the required information.</p>
+    </div>  
+      <!-- form -->
+      <form class="crime-form" method="post">
+        {% csrf_token %}
+        <!-- crime info -->
+        <div class="crime-info">
+          <h3>Important Information</h3>
+
+          <div class="col-md-4 det-form">
+              <label for="inputCrime" class="form-label fw-bold">Crime Type</label>
+              <select id="inputCrime" name="inputCrime" class="form-select" required>
+                <option selected>Choose Crime Type</option>
+                <option>Theft</option>
+                <option>Murder</option>
+                <option>Fraud</option>
+                <option>Traficking</option>
+                <option>Kidnapping</option>
+                <option>Rape</option>
+              </select>        
+            </div>
+
+            <div class="row g-3 det-form">
+              <label for="crimeAddress" class="form-label fw-bold">Address
+                  <div id="crimeAddress" class="form-text">Place where crime was comitted.</div>
+              </label>
+              <div class="col-md-6">
+                <label for="addCity" class="form-label fw-bold">City</label>
+                <input type="text" class="form-control" placeholder="City" id="addCity" name="addCity" required>
+              </div>
+              <div class="col-md-6">
+                <label for="addStreet" class="form-label fw-bold">Street</label>
+                <input type="text" class="form-control" placeholder="Street" id="addStreet" name="addStreet" required>
+              </div>
+            </div>
+
+          <div class="col-md-6 det-form">
+            <label for="crimeDesc" class="form-label fw-bold">Description of event
+                <div id="crimeDesc" class="form-text">Brief description of crime happened.</div>
+            </label>
+            <textarea class="form-control" placeholder="Description here......" id="crimeDesc" name="crimeDesc" required style="height: 12em;"></textarea>
+          </div>
+          <div class="col-md-6 det-form">
+            <label for="criminalDesc" class="form-label fw-bold">Description of Criminal/s
+                <div id="criminalDesc" class="form-text">Brief description about criminal/s.</div>
+            </label>
+            <textarea class="form-control" placeholder="Description here......" id="criminalDesc" name="criminalDesc" required style="height: 12em;"></textarea>
+          </div>
+        </div>
+        <!-- crime info -->
+
+        <!-- personal info -->
+        <div class="per-info">
+          <h3>Personal Information</h3>
+
+          <div class="col-md-12 det-form">
+            <label for="name" class="form-label fw-bold">Full Name</label>
+            <input type="text" class="form-control" placeholder="Your name" id="name" name="name" required>
+          </div>
+
+          <div class="col-md-12 det-form">
+            <label for="inputEmail" class="form-label fw-bold">Email</label>
+            <input type="email" class="form-control" placeholder="...@email.com" id="inputEmail" name="inputEmail" required>
+          </div>
+
+          <div class="col-md-12 det-form">
+            <label for="addPhone" class="form-label fw-bold">Contact No.</label>
+            <input type="tel" class="form-control" placeholder="012XXXXXXXXX" id="addPhone" name="addPhone" required>
+          </div>
+      </div>
+        <!-- personal info -->
+      <div class="report-btn det-form">
+        <button type="submit">Report a Crime</button>
+      </div>
+
+      </form>
+      <!-- form -->
+  </div>
+
+</main>
+
+{% endblock content %}

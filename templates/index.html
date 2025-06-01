@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main>
+ <!-- ======= Hero Section ======= -->
+ <div id="hero" class="d-flex align-items-center">
+  <div class="hero-container container" style="margin-top: -250px;">
+    <h1 style="color: white;">Welcome to Chauki-Thana</h1>
+    <h2 style="color: white;">We are team of talented police officers in your service.</h2>
+  </div>
+</div>
+<!-- hero -->
+
+<!-- ======= Why Us Section ======= -->
+<div id="hero-section" class="hero-section">
+  <div class="container">
+    
+
+    <div class="row"> 
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="hero-content shadow">
+          <h3>Why Choose Us?</h3>
+          <p>
+            The purpose of the police service is to uphold the law fairly and firmly; to prevent crime; to pursue and bring to justice those who break the law; to keep the Queen's peace; to protect, help and reassure the community; and to be seen to do this with integrity, common sense and sound judgement.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-8 d-flex align-items-stretch">
+        <div class="icon-boxes d-flex flex-column justify-content-center">
+          <!-- content -->
+          <div class="row">
+
+            <div class="col-xl-4 d-flex align-items-stretch">
+              <div class="icon-box mt-4 mt-xl-0 shadow">
+                <i class="far fa-handshake"></i>
+                <h4>Trust</h4>
+                <p>As we are the security officers we uphold the trust of the people.</p>
+              </div>
+            </div>
+
+            <div class="col-xl-4 d-flex align-items-stretch">
+              <div class="icon-box mt-4 mt-xl-0 shadow">
+                <i class="fas fa-users"></i>
+                <h4>Elite Officers</h4>
+                <p>We consists of many experienced and elite security officers ready to protect the city and citizens.</p>
+              </div>
+            </div>
+
+            <div class="col-xl-4 d-flex align-items-stretch">
+              <div class="icon-box mt-4 mt-xl-0 shadow">
+                <i class="fas fa-map-marked-alt"></i>
+                <h4>Quick Response</h4>
+                <p>How important is response time to the investigation of a crime?
+                  We find that faster response times lead to a large increase in the likelihood of detecting (i.e. 'clearing') crimes. </p>
+              </div>
+            </div>
+
+          </div>
+          <!-- content -->
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!--Hero Section -->
+
+ <!-- Services Section -->
+<section id="services" class="services" style="margin-top: 5em;">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p style="font-size: 17px;">Chauki-Thana is managed by professionals who are actively engaged in everyday client service. Chauki-Thana is accustomed to working for citizens located in different places and is available when they need assistance.
+      </p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="icon-box shadow-sm">
+          <div class="icon"><i class="fas fa-heartbeat"></i></div>
+          <h4>Advice and Crime Preventions</a></h4>
+          <p>Information and practical crime prevention advice.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+        <div class="icon-box shadow-sm">
+          <div class="icon"><i class="fas fa-pills"></i></div>
+          <h4>Support Service</a></h4>
+          <p>Advice and support for those affected by crime.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+        <div class="icon-box shadow-sm">
+          <div class="icon"><i class="fas fa-hospital-user"></i></div>
+          <h4>Community Payback</a></h4>
+          <p>Security and company for the citizens.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- Services Section -->
+
+
+<!--  Counts -->
+<section id="counts" class="counts" style="margin-top: 4em;">
+  <div class="container">
+
+    <div class="row counters">
+
+      <div class="col-lg-3 col-6 text-center">
+        <span data-purecounter-start="10" data-purecounter-end="{{ crime_rec }}" data-purecounter-duration="1" class="purecounter"></span>
+        <p>Crime</p>
+      </div>
+
+      <div class="col-lg-3 col-6 text-center">
+        <span data-purecounter-start="10" data-purecounter-end="{{ comp_rec }}" data-purecounter-duration="1" class="purecounter"></span>
+        <p>Complain</p>
+      </div>
+
+      <div class="col-lg-3 col-6 text-center">
+        <span data-purecounter-start="10" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+        <p>Hours Of Support</p>
+      </div>
+
+      <div class="col-lg-3 col-6 text-center">
+        <span data-purecounter-start="1" data-purecounter-end="112" data-purecounter-duration="1" class="purecounter"></span>
+        <p>Hard Workers</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+</main>
+<!-- End Counts  -->
+{% endblock content %}

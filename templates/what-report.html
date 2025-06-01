@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body>  
+  <main>
+  
+  <!-- breadcrumbs -->
+  <div class="top-sec" style="margin-top: 4em;">
+    <div class="container">
+      <ol class="breadcrumb" style="padding-top: 1em;">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page" style="color: #0f0fc2; font-weight: 500;">what-report</li>
+      </ol>
+    </div>
+  </div>
+  <!-- breadcrumbs -->
+  <section id="about-us" class  ="about-us">
+    <div class="container-md" style="max-width: 1600px;">
+      <div class="row row-content" style="align-items: center;justify-content: center;">
+
+        <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+        <h2 style="font-weight: 600;"> <u>What To Report?</u> </h2> <br>
+            <h4>
+                Reporting crimes and incidents
+            </h4> <br>
+            <div>
+                <p>
+                    What is a crime?
+                </p>
+                <span>A crime is a deliberate act that causes physical or psychological harm, damage to or loss of property, and is against the law.</span> <br> <br>
+                <span>There are lots of different types of crime and nearly everyone will experience a crime at some point in their lives. It affects people from all backgrounds, locations and ages. </span> <br> <br>
+                <span>If you feel that you've been affected by crime in any way please contact us, even if you're not sure the incident or event was a crime. </span>
+            </div> <br>
+            <div>
+                <h4> <u>Crime Types</u> </h4>
+                <p>Crime data is broken down into ‘major’ and ‘minor’ crime types. See a breakdown of what the major types are and the minor types they include below. </p>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Burglary 
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Burglary </strong> is the theft, or attempted theft, from a premises where access is not authorised.
+                            Damage to a premises that appears to have been caused by a person attempting to enter to commit a burglary, is also counted as burglary.
+                            Residential and commercial burglaries are distinguished by the function of the building.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Fraud and forgery
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Fraud</strong> Fraud is an intentional deception in most occasions for monetary gain; whereas forgery is the action of creating an exact replica of an object with the intention of deception.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Robbery
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Theft </strong> with the use of force or a threat of force. Both personal and commercial robbery are included. Snatch theft is not included.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Sexual Offence
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            A broad category of sexual offences, including Indecent Assault and Unlawful (under age) Sexual Intercourse. <br>
+
+                            Other types include:
+                            <ul>
+                                <li>Rape</li>
+                                <li>Sexual assault</li>
+                                <li>Indecent exposure</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Additional Crime Types
+                          </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            This is a broad category of types not covered in other categories. They range from weapon-related crimes to hate crimes and robbery.<br>
+
+                            Minor types include:
+                            <ul>
+                                <li>Gun crime</li>
+                                <li>Racist and religious hate crime</li>
+                                <li>Domestic crime</li>
+                                <li>Most serious violence</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+            </div> <br>
+            <div>
+               <h4> <u>Other things you can report</u> </h4>
+               <p>You can even complain someone who irritates or makes you distress.</p>
+
+               <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                    Anti-social behaviour
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Anti-social behaviour </strong> is defined as someone acting in a manner that causes or is likely to cause harassment, alarm or distress to one or more people not living in the same household as the perpetrator. 
+                    There are different ways to report anti-social behaviour based on the nature of the behaviour. 
+                    <h6>What to report to your the policing team:</h6>
+                    <ul>
+                        <li>if the anti-social behaviour is affecting your quality of life or making you fear for your safety or the safety of others
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                    Suspicious Activity
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Call the Anti-Terrorist Hotline on 0800 789 321. <br> <br>
+                    Or report your concerns to them online. The Anti-Terrorist Hotline reporting tool is managed by the Met police. 
+                  </div>
+                </div>
+              </div>
+
+            </div> <br> <br>
+            <div>
+                <h5> <u>Thinking about Taking action</u> </h5>
+                <p> <b>Want to report a crime. <a href="./crime">Report here</a></b> </p>
+                <p> <b>Or</b> </p>
+                <p> <b>Want to complain about person/s. <a href="./complain">Issue a complain</a></b> </p>
+            </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  </section>
+  <!--  About Us  -->
+
+  </main>
+</body>
+{% endblock content %}

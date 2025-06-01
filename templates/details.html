@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+  <!-- breadcrumbs -->
+  <div class="top-sec" style="margin-top: 4em;">
+    <div class="container">
+      <ol class="breadcrumb" style="padding-top: 1em;">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/records">Records</a></li>
+        <li class="breadcrumb-item active" aria-current="page" style="color: #0f0fc2; font-weight: 500;">Details</li>
+      </ol>
+    </div>
+  </div>
+<!-- breadcrumbs -->
+  <!--  About Us   -->
+  <section id="about-us" class  ="about-us">
+    <div class="container">
+      <div class="row row-content">
+        <div class="col-lg-5">
+          <div class="carousel-item active">
+            <img src="{% static 'img/bg.jpg' %}" class="d-block w-100" alt="..." style="height: 60vh; opacity:  0.9;">
+            <div class="carousel-caption d-none d-md-block pb-5">
+              <h1 class="pb-lg-5 mb-lg-5" style="font-size: 4em;">{{ data.title }}</h1>
+            </div>
+          </div>
+        </div>
+        <!-- for crime -->
+        <div class="col-lg-6 pt-4 pt-lg-2">
+          <h4 style="color:red"> 
+            Report Details:
+          </h4> 
+          <ul>
+            <li> <b style="color: blue;">Report Title: </b> {{ data.title }} </li>
+            <li> <b style="color: blue;">Address: </b> {{ data.city }}, {{ data.street }} </li>
+            <li> <b style="color: blue;">Description of event: </b> <br> {{ data.description }} <br> {{ data.criminalDesc }} </li>
+            <li> <b style="color: blue;">Date reported: </b>{{ data.date }}</li>
+            <li> <b style="color: blue;">Status of Report:</b> {{ data.status }}</li>
+          </ul>
+          <h4 style="color:red">Person's Informations:</h4>
+          <ul>
+            <li> <b style="color: blue;">Reported by:</b> {{ data.reported_by }}</li>
+            <li> <b style="color: blue;">Email:</b> {{ data.email }}</li>
+            <li> <b style="color: blue;">Phone number:</b> {{ data.phone }}</li>
+            <li> <b style="color: blue;">Done by:</b> {{ user.username }}</li>
+          </ul>
+          <p class="fst-italic">
+            The purpose of the police service is to uphold the law fairly and firmly; to prevent crime; to pursue and bring to justice those who break the law; to keep the Queen's peace; to protect, help and reassure the community; and to be seen to do this with integrity, common sense and sound judgement.
+          </p>
+          <form method="post" action="">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger mr-1 float-left">Update Status</button>
+          </form>
+        </div>
+  
+      </div>
+  
+    </div>
+  </section>
+  <!--  About Us  -->
+</main>
+{% endblock content %}

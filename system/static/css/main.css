@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav */
+nav{
+    transition: all ease-in-out .3s;
+    font-size: 16px;
+    padding: 0;
+}
+.navbar-nav, .dropdown-item{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.navbar-brand{  
+    font-family: 'Vujahday Script', cursive;
+}
+.nav-item a{
+    font-weight: 500;
+    color: #ffffff;
+}
+.navbar-collapse ul li{
+    padding-right: 10px;
+
+}
+.nav-item .nav-link.active{
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-radius: 3px;
+}
+.nav-item .nav-link:hover{
+  color: #00f1f5;
+  transition: all ease .3s;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-radius: 15px;
+}
+.nav-item.dropdown .dropdown-menu{
+  background-color: #2059dff3;
+}
+.dropdown-menu .dropdown-item{
+  color: #f4f4f4;
+}
+.dropdown-menu .dropdown-item:hover{
+  background-color: #def6fcbb;;
+  color: #5f4fee;
+}
+.nav-item button{
+    color: rgb(255, 255, 255);
+    padding: 0 15px;
+    margin-top: 7px;
+    font-size: 13px;
+    font-weight: 550;
+    height: 30px;
+    border-radius: 1.5em;
+    border: 1.5px solid #e4e1ff;
+    background-color: transparent;
+}
+.nav-item button:hover{
+    color: rgb(5, 4, 4);
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: all ease-in-out .5s;
+}
+/* nav */
+/* ******************************************************************************************************* */
+/* Hero */
+#hero{
+    width: 100%;
+    height: 80vh;
+    background: url("{% static 'img/'1.jpg %}") top center;
+    background-size: cover;
+    margin-bottom: -250px;
+}
+/* hero */
+
+/* Hero content */
+.hero-section .hero-content {
+    padding: 30px;
+    background: #2086df;
+    border-radius: 4px;
+    color: #fff;
+}
+.hero-section .hero-content h3 {
+    font-weight: 700; 
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.hero-section .hero-content p {
+    margin-bottom: 30px;
+}
+.hero-section .hero-content .more-btn {
+    text-decoration: none;
+    display: inline-block;
+    background: #ffffff33;
+    padding: 6px 30px 8px 30px;
+    color: #fff;
+    border-radius: 50px;
+    transition: all ease-in-out .5s;
+}
+.hero-section .hero-content .more-btn i {
+    font-size: 14px;
+}
+.hero-section .hero-content .more-btn:hover {
+    color: #1977cc;
+    background: #fff;
+}
+.hero-section .icon-boxes .icon-box {
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    width: 100%;
+}
+.hero-section .icon-boxes .icon-box i {
+    font-size: 40px;
+    color: #1977cc;
+    margin-bottom: 30px;
+}
+.hero-section .icon-boxes .icon-box h4 {
+    color: #3c5d7c;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+.hero-section .icon-boxes .icon-box p {
+    font-size: 15px;
+    color: #848484;
+}
+/* Hero content */
+
+/* ******************************************************************************************************** */
+/* count */
+.counts {
+    padding: 30px 0 20px 0;
+    color: #02080e;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.counts .counters .text-center{
+    background-color: #34b2f6;
+    border-radius: 50px;
+}
+.counts .counters span {
+    font-size: 40px;
+    display: block;
+    font-weight: 700;
+}
+.counts .counters p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* count */
+
+/* ******************************************************************************************************** */
+
+/* footer */
+footer{
+    padding: -10px 0 0 0;
+    background: #73beff;
+}
+footer h6, 
+footer a, 
+footer p,
+footer p1{
+    font-weight: 600;
+    color: black;
+}
+footer p:hover{
+    transition: all ease-in-out .3s;
+    color: #1717f5;
+}
+footer .text-reset{
+    text-decoration: none;
+    padding-left: 5px;
+}
+footer .btn{
+    border-radius: 5px;
+}
+footer .btn:hover{
+    transition: all ease-in-out .5s;
+}
+footer .fa-chevron-right{
+    font-size: 12px;
+}
+/* footer */
+
+/* ***************************************************************************************************** */
+/* breadcrumbs */
+.top-sec{
+    background-color: #7bb9f3c9;
+}
+.top-sec h2{
+    padding-top: 1em;
+    text-align: center;
+    justify-content: center;
+    color: #0f0fc2;
+}
+.top-sec ol li a{
+    color: #0a0a0a;
+    text-decoration: none;
+}
+.top-sec ol li a:hover{
+    color: #0f0fc2;
+    text-decoration: none;
+}
+.breadcrumb-item{
+    padding-bottom: 1em;
+}
+/* breadcrumbs */
+
+
+/* ********************************************************************************************************/
+/* about us */
+.about-us{
+    margin-top: 2em;
+}
+.about-us .content ul {
+    list-style: none;
+    padding: 0;
+}
+.about-us .content ul li {
+    padding: 10px 0 0 10px;
+    position: relative;
+}
+.about-us .content p:last-child {
+    margin-bottom: 0;
+}
+
+/* OUR TEAM */
+.team .member {
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.team .member .member-img {
+    position: relative;
+    overflow: hidden;
+}
+.team .member .social {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team .member .social a {
+    transition: color 0.3s;
+    color: #111;
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+}
+.team .member .social a i {
+    line-height: 0;
+}
+.team .member .social a:hover {
+    color: #1bbd36;
+}
+.team .member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+.team .member .member-info {
+    padding: 25px 15px;
+}
+.team .member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #111;
+}
+.team .member .member-info span {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #b4aca8;
+}
+.team .member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+    color: #847872;
+}
+.team .member:hover .social {
+    opacity: 1;
+}
+/* about us */
+/* ****************************************************************************************************** */
+
+/* Crime report / Complain form */
+#display-form h2,
+#display-form h3{
+    color: #ff0000;
+}
+.report-form{
+    margin-top: 1em;
+    background-color: #eaebec;
+}
+.report-form .form-top{
+    padding: 2em 2em 1em 2em;
+    border-bottom: #dad7d7 solid;
+}
+form{
+    padding: 2em;
+}
+.report-form .form-top h2, 
+.form-top p{
+    text-align: center;
+    justify-content: center;
+}
+.report-form .crime-form h3{
+    text-align: center;
+    justify-content: center;
+    text-decoration: underline rgba(100, 101, 107, 0.466);
+}
+.det-form{
+    padding-bottom: 1em;
+}
+.crime-info{
+    border-bottom: #dad7d7 solid;
+}
+.per-info{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.report-form .report-btn button{
+    margin-left: 20em;
+    padding: .4em;
+    border: solid #9c9898;
+    border-radius: .5em;
+    background-color: #ff0505c9;
+    color: white;
+    transition: 0.5s;
+}
+.report-form .report-btn button:hover{
+    background-color: rgb(48, 48, 245);
+}
+/* Crime report form */
+/* ***************************************************************************************************** */
+
+/* Hero */
+#hero{
+    width: 100%;
+    height: 80vh;
+    background: url("../img/1.jpg") top center;
+    background-size: cover;
+    margin-bottom: -250px;
+}
+/* hero */
+
+/* Hero content */
+.hero-section .hero-content {
+    padding: 30px;
+    background: #2086df;
+    border-radius: 4px;
+    color: #fff;
+}
+.hero-section .hero-content h3 {
+    font-weight: 700; 
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.hero-section .hero-content p {
+    margin-bottom: 30px;
+}
+.hero-section .hero-content .more-btn {
+    text-decoration: none;
+    display: inline-block;
+    background: #ffffff33;
+    padding: 6px 30px 8px 30px;
+    color: #fff;
+    border-radius: 50px;
+    transition: all ease-in-out .5s;
+}
+.hero-section .hero-content .more-btn i {
+    font-size: 14px;
+}
+.hero-section .hero-content .more-btn:hover {
+    color: #1977cc;
+    background: #fff;
+}
+.hero-section .icon-boxes .icon-box {
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    width: 100%;
+}
+.hero-section .icon-boxes .icon-box i {
+    font-size: 40px;
+    color: #1977cc;
+    margin-bottom: 30px;
+}
+.hero-section .icon-boxes .icon-box h4 {
+    color: #3c5d7c;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+.hero-section .icon-boxes .icon-box p {
+    font-size: 15px;
+    color: #848484;
+}
+/* Hero content */
+
+/* services */
+.section-title h2{
+  text-align: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #3b6083;
+  text-decoration: 2px underline;
+}
+.section-title p{
+    padding: 10px;
+}
+.services .icon-box {
+    margin-left: 5em;
+    width: 50em;
+    text-align: center;
+    border: 1px solid #d5e1ed;
+    padding:50px 20px 50px 20px;
+    transition: all ease-in-out 0.3s;
+    box-sizing: border-box;
+    box-shadow: 10px;
+}
+.services .icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: #1977cc;
+    border-radius: 20px;
+    transition: all 0.3s ease-out 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transform-style: preserve-3d;
+}
+.services .icon-box .icon i {
+    color: #fff;
+    font-size: 25px;
+}
+.services .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.services .icon-box h4 a {
+    text-decoration: none;
+    color: #2c4964;
+}
+.services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+/* services */
